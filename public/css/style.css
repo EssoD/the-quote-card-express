@@ -1,0 +1,49 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/mockup.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+.quote-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.author-text {
+  font-style: italic;
+  font-size: 1rem;
+}
